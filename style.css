@@ -61,6 +61,7 @@
   }
   .navlist{
     display: flex;
+    position: relative;
   }
   .navlist a{
     color: var(--text-color);
@@ -167,6 +168,7 @@ padding: 0px 5px;
   border-radius: 5px;
   position: relative; overflow: hidden;
   z-index: 1;
+  color: white;
 
 }
 a.btn::before{
@@ -182,6 +184,7 @@ a.btn::before{
 }
 a.btn:hover::before{
   width: 100%;
+  color: white;
 }
 
 .social-media-icons{
@@ -451,9 +454,9 @@ height: 40px;
   .content p {
     font-size: 9px;
   }
-.navlist{
+/* .navlist{
   display: none;
-}
+} */
 
 }
 
@@ -655,4 +658,123 @@ color: white;
 @media(max-width:800px){
 .imran{
 grid-template-columns: 1fr;}
+}
+
+
+
+
+
+
+
+
+/* ..................form.............. */
+.con{
+    margin-top: 9%;
+    border-radius: 8px;
+}
+form{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+input{
+  background-color: var(--secon-bg-color);
+    display: block;
+    padding: 9px;
+    width: 85%;
+    border: 0;
+    outline: none;
+    margin: 10px auto;
+    border-radius: 8px;
+    font-weight: bolder;
+
+}
+textarea{
+  background-color: var(--secon-bg-color);
+    display: block;
+    padding: 9px;
+    width: 85%;
+    border: outline;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    font-weight: bolder;
+
+}
+.btn{
+    display: block;
+    padding: 7px 15px;
+    background-color: var(--hover-color);
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 15px auto;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+.btn:hover{
+  background-color: var(--bg-color);
+
+}
+
+@media(max-width:768px){
+#menuIcon{
+  display: block;
+  transition: all;
+}
+ #menuIcon {
+        display: block;
+        width: 50px;
+        border-radius: 50px;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .navlist {
+        display: block;
+        width: 0;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-bottom-left-radius: 0;
+        transition: width 0.5s, height 0.5s, border-radius 0.5s;
+    }
+
+    .navlist.open-menu {
+        width: 100%;
+        height: 100vh;
+        border-bottom-left-radius: 0;
+    }
+    .navlist.open-menu {
+        display: block;
+
+    }
+    .navlist a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        filter: blur(0.5px);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        position: relative;
+        text-shadow: 0px 0px 0px red;
+        transition: text-shadow 0.5s, transform 0.5s;
+    }
+
+    .navlist a:hover {
+        text-shadow: -3px -3px 0 red;
+        transform: translateY(-6px);
+    }
 }
