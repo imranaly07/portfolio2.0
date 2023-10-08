@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+    
+  }
+  html{
+    scroll-behavior: smooth;
   }
 
 :root{
@@ -709,7 +713,7 @@ textarea{
     color: white;
     font-weight: bolder;
     font-size: 1rem;
-    margin: 15px auto;
+    margin: 4px auto;
     border-radius: 8px;
     font-weight: bolder;
 }
@@ -777,4 +781,56 @@ textarea{
         text-shadow: -3px -3px 0 red;
         transform: translateY(-6px);
     }
+
+    .con{
+      margin-top: 9%;
+      border-radius: 8px;
+  }
+  form{
+      width: 100%;
+      max-width: 95%;
+      margin: auto;
+  }
+  input{
+    background-color: var(--secon-bg-color);
+      display: block;
+      padding: 9px;
+      width: 90%;
+      border: 0;
+      outline: none;
+      margin: 10px auto;
+      border-radius: 8px;
+      font-weight: bolder;
+  
+  }
+  textarea{
+    background-color: var(--secon-bg-color);
+      display: block;
+      padding: 9px;
+      width: 90%;
+      border: outline;
+      margin: 10px auto;
+      border-radius: 8px;
+      border: 0;
+      outline: none;
+      font-weight: bolder;
+  
+  }
+  .btn{
+      display: block;
+      padding: 7px 15px;
+      background-color: var(--hover-color);
+      color: white;
+      font-weight: bolder;
+      font-size: 1rem;
+      margin: 4px auto;
+      border-radius: 8px;
+      font-weight: bolder;
+  }
+  .btn:hover{
+    background-color: var(--bg-color);
+  
+  }
 }
+
+
