@@ -801,6 +801,8 @@ textarea{
       margin: 10px auto;
       border-radius: 8px;
       font-weight: bolder;
+      color: white;
+      font-size: 15px;
   
   }
   textarea{
@@ -814,6 +816,9 @@ textarea{
       border: 0;
       outline: none;
       font-weight: bolder;
+      color: white;
+      font-size: 15px;
+
   
   }
   .btn{
@@ -831,6 +836,13 @@ textarea{
     background-color: var(--bg-color);
   
   }
+}
+
+
+::placeholder{
+  font-size: 13px ;
+  font-weight: bold;
+  color: white;
 }
 
 
